@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         blueSlider.value = Float(ciColor.blue)
     }
 
-    // реализуем метод делегата в экшене по нажатию кнопки
+    // передаем параметры метода делегата в экшене по нажатию кнопки
     @IBAction func goBackButtonAction(_ sender: UIButton) {
         delegate?.setColor(viewColor.backgroundColor ?? .white)
         dismiss(animated: true)

@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     
 }
 
-// подписываем текущий класс на протокол делегата, в котором принимаем параметры реализованного метода
+// подписываем текущий класс на протокол делегата, в котором принимаем параметры метода делегата и прописываем свою реализацию
 extension MainViewController: ViewControllerDelegate {
     func setColor(_ color: UIColor) {
         view.backgroundColor = color
